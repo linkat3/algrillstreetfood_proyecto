@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Al Grill Street Food">
+  <meta name="keywords"
+    content="Carne al grill, comida, food, cocina, arepitas, arepas, patacones, platanos, papas, deliciosos postres">
+  <meta name="author" content="Linda Lovera">
+  <title>Al Grill Street Food - Galería</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <img class="logoC img-fluid" src="./images/logo_redondo_fondo_negro.png" alt="Logotipo Al Grill Street Food Menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menuTexto" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="como-trabajamos.html">¿Cómo Trabajamos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/algrill_streetfood/" target="_blank"><i
+                class="bi bi-instagram text-dark"></i></a>
+          </li>
+          <li class="nav-item">
+            <!-- BS5 dropdown -->
+            <div class="dropdown">
+              <!-- Función JS para efecto dropdown -->
+              <button onclick="myFunction()" class="dropbtn">Links Útiles</button>
+              <div id="miDropdown" class="dropdown-content">
+                <a href="https://www.holidayworldmaspalomas.com/" target="_blank">Holiday World</a>
+                <a href="https://www.maspalomas.com/" target="_blank">Maspalomas</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="galeriaH pb-2">
+    <!-- Utilizando badges -->
+    <h1 class="d-flex justify-content-center">Galería de Nuestros Platos
+      <span class="badge bg-secondary">Tops</span>
+    </h1>
+
+    <h2 class="px-2"> Podrás ver aquí algunas imágenes de
+      <span class="badge  bg-info text-dark">nuestros</span> platos
+    </h2>
+  </header>
+  <article>
+    <section class="container-fluid">
+      <h4 class="px-2">Esta galería, muestra y renueva de manera mensual fotos de nuestros mejores platos, elegidos por
+        nuestra
+        clientela.</h4>
+    </section>
+    <!-- Usando BS5 tabla para organizar la galería -->
+    <article class="container-fluid container-lg container-sm">
+      <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">Mes</th>
+            <th scope="col"><span class="badge bg-warning text-light">Febrero</span></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Semana 1</th>
+            <td><img class="img-fluid img-thumbnail imgGaleria" src="./images/algrill_07.jpg"
+                alt="Foto del día Al Grill">
+            </td>
+            <td><img class="img-fluid img-thumbnail imgGaleria" src="./images/algrill_08.jpg"
+                alt="Foto del día Al Grill">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Semana 2</th>
+            <td><img class="img-fluid img-thumbnail imgGaleria" src="./images/algrill_09.png"
+                alt="Foto del día Al Grill">
+            </td>
+            <td><img class="img-fluid img-thumbnail imgGaleria" src="./images/algrill_10.png"
+                alt="Foto del día Al Grill">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Semana 3</th>
+            <td>
+              <img class="img-fluid img-thumbnail imgGaleria" src="./images/algrill_11.png" alt="Foto del día Al Grill">
+            </td>
+            <td>
+              <img class="img-fluid img-thumbnail imgGaleria" src="./images/algrill_12.png" alt="Foto del día Al Grill">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <!-- BS5 Pagination para ir a más fotos de galería -->
+    <section class="d-flex justify-content-center">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="galeria.html" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="galeria.html">1</a></li>
+          <li class="page-item"><a class="page-link disabled" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="video.html">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="video.html" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    </main>
+    <footer class="text-center text-lg-start bg-dark text-light mt-1">
+      <!-- Section: Social media -->
+    <section class=" row d-flex justify-content-around p-4 border-bottom" id="btn">
+      <!-- Left -->
+      <div class="col-4 col-sm-3">
+        <span>Síguenos en Instagram:</span>
+      </div>
+      <div class="d-flex align-items-start col-4 col-sm-3">
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating link-secondary" style="background-color: red;"
+          href="https://www.instagram.com/algrill_streetfood/" role="button">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="col-4 col-sm-3">
+        <h6>¿Te gusta?</h6>
+        <!-- Script boton para votación -->
+        <button class="bg-warning" type="button" onclick="alert('Gracias por tu votación!')">Sí!</button>
+        <button class="bg-warning" type="button" onclick="alert('Gracias por tu votación!')">No!</button>
+      </div>
+    </section>
+      <!-- Section: Links  -->
+      <section class="container-fluid">
+        <div class="text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Al Grill Street Food
+              </h6>
+              <p>
+                Al Grill Street Food © es una marca registrada, de restauración especialistas en carne y comida
+                venezolana.
+              </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Haz un Pedido
+              </h6>
+              <p>
+                <a href="https://glovoapp.com/es/es/maspalomas/al-grill-street-food-maspalomas/" class="text-reset">Pide
+                  con Glovo </a>
+              </p>
+              <p>
+                <a href="https://www.ubereats.com/es/store/al-grill-street-food/-H8_HoppVIeKYiQ4No28CA"
+                  class="text-reset"> Uber Eats </a>
+              </p>
+              <p>
+                <a href="https://www.just-eat.es/restaurants-al-grill-street-food-35100-35100/" class="text-reset"> Just
+                  Eat </a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Links Útiles
+              </h6>
+              <p>
+                <a href="https://www.holidayworldmaspalomas.com/" target="_blank" class="text-reset">Holiday World </a>
+              </p>
+              <p>
+                <a href="https://www.maspalomas.com/" target="_blank" class="text-reset">Maspalomas</a>
+              </p>
+              <p>
+                <a href="https://www.grancanaria.com/turismo/es/playas/maspalomas/" target="_blank"
+                  class="text-reset">Gran Canaria</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> Holidayworld Maspalomas Center
+                Dirección: Av. Touroperador Tui, 18, Sonnenland, 35100 Las Palmas</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@algrillstretfood.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> +34 657 60 64 43</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <section class="copyright" id="titulo">
+        <div class="row text-center p-3 bg-gradient">
+          <div class="col-6">
+            <span>© 2024 Copyright:</span>
+            <a class="text-white" href="index.html">Al Grill Street Food</a>
+          </div>
+          <div class="col">
+            <span>Cambia el color del texto de este apartado, clic en el botón</span>
+            <input type="button" value="Hacer clic">
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+    <!-- Script para cambiar de fondo -->
+    <script src="./js/background.js"></script>
+    <!-- Script para dropDown menu -->
+    <script src="./js/menuDropdown.js"></script>
+</body>
+
+</html>

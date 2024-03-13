@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    font-size: 3vh;
+}
+
+ ul > li {
+    padding-left: 8px;
+}
+
+main {
+    background-color: #F4F4F4;
+}
+
+.container-main video {
+    width: 100%;
+    display: block;
+    min-height: 200px;
+    border: none;
+}
+
+
+img {
+    width: 90%;
+}
+
+.star {
+    width: 5%;
+    float: right;
+}
+
+.logoC {
+    margin-top: 10px;
+    width: 12vh;
+    border-radius: 50%;
+    /* justify-content: end; */
+}
+
+.logoM {
+    width: 8%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.galeriaMenu {
+    background-color: #E7E7E7;
+    margin-top: 100px; 
+    /* padding-top: 10px;  */
+}
+
+.alert {
+    width: 25%;
+}
+
+/* Modificando el spinners para cargar el banner desde JS */
+.cargando {
+    /* position: fixed; */
+    opacity: .8;
+    width: 10rem; 
+    height: 10rem;
+    margin-top: 8%;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* Estilo del menu dropDown con JS */
+.dropbtn {
+    background-color: #22262A;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #CC0000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* float: left; */
+    padding-right: 8px;
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: min-content;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+    color: #CC0000;
+}
+
+.mostrar {
+    display: block;
+}
+
+/* Fin de estilos dropDown con JS */
+/* Copyright */
+.copyright {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #F44A29;
+    color: black;
+}
+
+
+/* Imágenes para la galería */
+.imgGaleria {
+    width: 55vh;
+
+}
+.galeriaH {
+    position: relative;
+    padding-top: 100px;
+    margin-top: 50px;
+    background-color: #FFE79F;
+    
+}
+
+/* Start: Google Maps Responsive */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 400px;
+    /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* End: Google Maps Responsive */
+
+.cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    color: white;
+    font-family: arial;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    [class="galeria"] {
+        width: 80%;
+    }
+
+    [class="galeriaMenu"] {
+        margin-top: 60px;
+        padding-top: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    [class="galeria"] {
+        margin-top: 35px;
+        padding-top: 35px;
+    }
+
+    [class="galeriaMenu"] {
+        margin-top: 50px;
+        padding-top: 40px;
+        width: 85vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    [class="galeriaMenu"] {
+        margin-top: 50px;
+        padding-top: 50px;
+        width: 80vh;
+    }
+}

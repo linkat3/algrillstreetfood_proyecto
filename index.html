@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Al Grill Street Food">
+  <meta name="keywords"
+    content="Carne al grill, comida, food, cocina, arepitas, arepas, patacones, platanos, papas, deliciosos postres">
+  <meta name="author" content="Linda Lovera">
+  <title>Al Grill Street Food</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Nav con BS5 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <img class="logoC img-fluid" src="./images/logo_redondo_fondo_negro.png" alt="Logotipo Al Grill Street Food Menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menuTexto" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="como-trabajamos.html">¿Cómo Trabajamos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/algrill_streetfood/" target="_blank"><i
+                class="bi bi-instagram text-dark"></i></a>
+          </li>
+          <li class="nav-item">
+            <!-- BS5 DropDown, junto uso JavaScript cambiar estilo -->
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Links Útiles</button>
+              <div id="miDropdown" class="dropdown-content">
+                <a href="https://www.holidayworldmaspalomas.com/" target="_blank">Holiday World</a>
+                <a href="https://www.maspalomas.com/" target="_blank">Maspalomas</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <div class="d-flex justify-content-center">
+    <!-- Usando Spinner de BS5  -->
+    <div class="cargando spinner-border text-danger" id="cargando" role="status">
+      <span class="visually-hidden">Cargando...</span>
+    </div>
+  </div>
+  <!-- Librería JQuery para darle animación al spinner de BS5 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Con JS función de carga de ventana que al terminar se vaya el spinner de BS5  -->
+  <script>
+    $(window).load(function () {
+      $(".cargando").fadeOut("slow");
+    });
+  </script>
+  <header class="container-main">
+    <video autoplay muted playsinline loop width="100" class="object-fit-scale">
+      <source src="./videos/introV.mp4" type="video/mp4">
+    </video>
+  </header>
+  <!-- Cookies -->
+  <section class="cookies">
+    <h2 class="cookies__titulo">¿Aceptas nuestras Cookies?</h2>
+    <p class="cookies__texto">Usamos cookies para mejorar tu experiencia en la web.</p>
+    <div class="cookies__botones">
+      <button class="cookies__boton cookies__boton--no">No</button>
+      <button class="cookies__boton cookies__boton--si">Si</button>
+    </div>
+  </section>
+  <!-- Aquí se generarán todas las etiquetas <script> si acepta el usuario -->
+  <div id="nuevosScripts"></div>
+  <main>
+    <article class="container-fluid container-sm container-lg container-xl py5">
+      <section class="container-main">
+        <h1 class="d-flex justify-content-center"> Al Grill Street Food - Holiday World, Maspalomas</h1>
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <img class="img-fluid rounded logoC" src="./images/new_logo.png" alt="Logotipo de Al Grill Street Food">
+          </div>
+          <div class="col-10 mt-2">
+            <!-- BS5 Alert -->
+            <div class="alert alert-warning" role="alert">
+              <h5>Sobre Nosotros!</h5>
+            </div>
+            <span class="d-flex justify-content-start me-1">
+              En Al Grill Street Food, de Maspalomas, encontrarás gran variedad de platos elaborados con los mejores
+              ingredientes y de la mejor calidad. Prueba cada una de las delicias que te ofrece su variada carta y lo
+              mejor de todo, a muy buen precio.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="d-flex justify-content-center mt-2 text-warning">Nuestros Platos TOP</h2>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <!-- Cards de BS5 -->
+            <div class="card">
+              <img src="./images/algrill_12.png" class="card-img-top" alt="Plato Favorito de todos">
+              <div class="card-body">
+                <p class="card-text">Los tequeños no son más que eso, unos palitos de queso tremendamente populares en
+                  Venezuela cuya peculiaridad es la masa de harina de trigo frita. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <img src="./images/algrill_14.JPG" class="card-img-top" alt="Costillas Jugosas">
+              <div class="card-body">
+                <p class="card-text"> Pieza de carne muy jugosa y tierna de textura melosa casi sin infiltraciones de
+                  grasa, procedente de novillos argentinos o uruguayos. Puedes pedir entrecot, solomillo o picaña.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+    <aside class="pb-2 mx-2">
+      <!-- Reseñas -->
+      <h3 class="d-flex justify-content-center mt-2">Reseñas de Nuestros Clientes</h3>
+      <div class="row mx-2 d-flex justify-content-center">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+
+            <div class="card-header bg-secondary text-light">
+              Mat Thomas
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+
+            </div>
+            <div class="card-body">
+              <p class="card-text">La calidad precio de este sitio es bestial. Carne muy rica, cocinada perfecta y con
+                guarniciones ricas. De las mejores propuestas que puedes encontrar en este sitio.</p>
+              <a href="#" class="btn btn-danger">+ Reseñas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+
+            <div class="card-header bg-secondary text-light">
+              Adriana P
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+
+            </div>
+            <div class="card-body">
+              <p class="card-text">Qué hallazgo. Ubicado en el patio de comidas
+                de Holiday World, una delicia para los amantes de la carne. Similar a un asador venezolano, pero para
+                llevar. Carne cocinada por expertos, con salsas y acompañamientos para
+                complementar.</p>
+              <a href="#" class="btn btn-danger">+ Reseñas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+
+            <div class="card-header bg-secondary text-light">
+              Iban Arocena Artola
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+              <img src="./images/baseline_star_rate_black_24dp.png" class="card-img-top star" alt="...">
+
+            </div>
+            <div class="card-body">
+              <p class="card-text">La comida muy muy rica, calidad-precio buenísimo y la atención de la chica de la caja
+                inmejorable. Muchas gracias. Entrecot + chimichurri + ensalada de guacamole y tomate + arepas.</p>
+              <a href="#" class="btn btn-danger">+ Reseñas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+  <footer class="text-center text-lg-start bg-dark text-light mt-1">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-lg-between p-4 border-bottom" id="btn">
+      <!-- Left -->
+      <div class="d-none d-lg-block">
+        <span>Síguenos en Instagram:</span>
+      </div>
+      <div class="d-flex align-items-start">
+        <!-- Instagram -->
+        <a class="btn text-white btn-floating link-secondary" style="background-color: red;"
+          href="https://www.instagram.com/algrill_streetfood/" role="button">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div>
+        <h6>¿Te gusta?</h6>
+        <!-- Script boton para votación -->
+        <button class="bg-warning" type="button" onclick="alert('Gracias por tu votación!')">Sí!</button>
+        <button class="bg-warning" type="button" onclick="alert('Gracias por tu votación!')">No!</button>
+      </div>
+      <div>
+        <h6>Si quieres cambiar el color de fondo de este apartado, clic en el siguiente botón</h6>
+        <input type="button" value="Hacer clic">
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    <section class="container-fluid">
+      <div class="text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Al Grill Street Food
+            </h6>
+            <p>
+              Al Grill Street Food © es una marca registrada, de restauración especialistas en carne y comida
+              venezolana.
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Haz un Pedido
+            </h6>
+            <p>
+              <a href="https://glovoapp.com/es/es/maspalomas/al-grill-street-food-maspalomas/" class="text-reset">Pide
+                con Glovo </a>
+            </p>
+            <p>
+              <a href="https://www.ubereats.com/es/store/al-grill-street-food/-H8_HoppVIeKYiQ4No28CA"
+                class="text-reset"> Uber Eats </a>
+            </p>
+            <p>
+              <a href="https://www.just-eat.es/restaurants-al-grill-street-food-35100-35100/" class="text-reset"> Just
+                Eat </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links Útiles
+            </h6>
+            <p>
+              <a href="https://www.holidayworldmaspalomas.com/" target="_blank" class="text-reset">Holiday World </a>
+            </p>
+            <p>
+              <a href="https://www.maspalomas.com/" target="_blank" class="text-reset">Maspalomas</a>
+            </p>
+            <p>
+              <a href="https://www.grancanaria.com/turismo/es/playas/maspalomas/" target="_blank"
+                class="text-reset">Gran Canaria</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Holidayworld Maspalomas Center
+              Dirección: Av. Touroperador Tui, 18, Sonnenland, 35100 Las Palmas</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@algrillstretfood.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +34 657 60 64 43</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ubicación del ejercicio JavaScript -->
+    <aside class="d-flex justify-content-center border-bottom">
+      <div class="card" style="width: 30%;">
+        <h6 class="text-primary d-flex justify-content-center">¿Quieres saber si estas en edad de jubilación?</h6>
+        <button type="button" class="btn btn-secondary" id="btn2">Clic para activar</button>
+        <div class="card-body text-danger">
+          <p id="resp1">
+          </p>
+          <p id="resp2">
+          </p>
+          <p id="resp3">
+          </p>
+          <p id="resp4">
+          </p>
+          <p id="default">
+          </p>
+        </div>
+      </div>
+    </aside>
+    <!-- Copyright -->
+    <section class="copyright" id="titulo">
+      <div class="row text-center p-3 bg-gradient">
+        <div class="col-6">
+          <span>© 2024 Copyright:</span>
+          <a class="text-white" href="index.html">Al Grill Street Food</a>
+        </div>
+        <div class="col">
+          <span>Cambia el color del texto de este apartado, clic en el botón</span>
+          <input type="button" value="Hacer clic">
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <!-- Script para cambiar de fondo -->
+  <script src="./js/background.js"></script>
+  <!-- Script para dropDown menu -->
+  <script src="./js/menuDropdown.js"></script>
+  <!-- Script para as Cookies -->
+  <script defer src="./js/cookies.js"> </script>
+  <!-- Script del Ejercicio 9 -->
+  <script src="./js/ejercicioNueve.js"></script>
+</body>
+
+</html>
